@@ -2,6 +2,7 @@ version: "3"
 services:
   handson-ml3:
     build:
+      network: host
       context: ../
       dockerfile: ./docker/Dockerfile #Dockerfile.gpu
       args:
